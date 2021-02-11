@@ -1,0 +1,22 @@
+#demo {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  font-family: arial, sans-serif;
+}
+.pdt {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+.pname {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+.pprice, .prate {
+  color: #777;
+}
+.pstar img {
+  width: 30px;
+  cursor: pointer;
+}
