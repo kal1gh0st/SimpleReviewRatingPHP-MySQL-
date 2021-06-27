@@ -1,0 +1,23 @@
+#File test.sh
+#kal1gh0st
+
+#!/bin/bash
+out=$(wget -qO- $1 |
+ grep -Eoi '<script [^>]+>' |  
+ grep -Eo 'src="[^\"]+"' | 
+ grep -Eo '["\047].*["\047]' | sed 's/\"//g')
+
+echo -e $out | tr -s ' ' | tr ' ' '\n' | grep -i "jquery"
+
+#Save the above commands as a shell script file.
+#Example
+#bash test.sh <site_url>
+
+#The output will be
+
+#/resources/js/vendor/jquery.js
+#/resources/js/vendor/jquery-ui.js
+#/resources/js/vendor/jquery.handsontable.full.js
+#/resources/js/vendor/jquery.bxslider.js
+
+#It will print only the jquery URLs inside the tag
