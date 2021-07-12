@@ -1,4 +1,4 @@
-# SimpleReviewRatingPHP-MySQL-
+# SimpleReviewRatingPHP-MySQL
 ![immagine](https://user-images.githubusercontent.com/56889513/117020701-fb1f5900-acf6-11eb-8b5d-031657066238.png)
 
 I have included a zip file with all the source code
